@@ -1,4 +1,5 @@
 #Usage
+
 ##Module
 ```
 @NgModule({
@@ -30,3 +31,7 @@ export class AppModule {}
  }
 ```
 You can use both decorators in any place of your application.
+
+#Learn more
+
+https://purecaesar.medium.com/requests-management-in-angular-7fd7b15a112e
