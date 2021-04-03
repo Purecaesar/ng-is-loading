@@ -3,5 +3,46 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "ng-is-loading": {
+      "projectType": "library",
+      "root": "projects/ng-is-loading",
+      "sourceRoot": "projects/ng-is-loading/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ng-is-loading/tsconfig.lib.json",
+            "project": "projects/ng-is-loading/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-is-loading/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-is-loading/src/test.ts",
+            "tsConfig": "projects/ng-is-loading/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-is-loading/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-is-loading/tsconfig.lib.json",
+              "projects/ng-is-loading/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ng-is-loading"
 }
