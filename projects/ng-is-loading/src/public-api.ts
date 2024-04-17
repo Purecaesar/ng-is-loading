@@ -6,3 +6,4 @@ export * from './lib/loading.module';
 export * from './lib/services/loading.service';
 export * from './lib/decorators/is-loading-decorator';
 export * from './lib/decorators/loading-decorator';
+export * from './lib/signals/is-loading.signal';

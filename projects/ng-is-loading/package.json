@@ -2,8 +2,8 @@
   "name": "ng-is-loading",
   "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": "^11.2.8",
-    "@angular/core": "^11.2.8"
+    "@angular/common": "^17.3.5",
+    "@angular/core": "^17.3.5"
   },
   "dependencies": {
     "tslib": "^2.0.0"
