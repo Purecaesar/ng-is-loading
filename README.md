@@ -1,6 +1,6 @@
-#Usage
+**Usage**
 
-##Module
+*Module*
 ```
 @NgModule({
   imports: [NgLoadingModule.forRoot()],
@@ -8,7 +8,7 @@
 })
 export class AppModule {}
 ```
-##Component
+*Component*
 ```
 @Component({
    selector: "my-app",
@@ -32,6 +32,6 @@ export class AppModule {}
 ```
 You can use both decorators in any place of your application.
 
-#Learn more
+**Learn more**
 
 https://purecaesar.medium.com/requests-management-in-angular-7fd7b15a112e
